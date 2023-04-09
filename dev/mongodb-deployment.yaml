@@ -30,11 +30,11 @@ spec:
         - name: mongodb-data
           persistentVolumeClaim:
             claimName: mongo-data-pvc
-  spec:
-    selector:
-      matchLabels:
-        app: mongodb
-    ports:
-      - name: "27017"
-        port: 27017
-    type: NodePort
+      # Mover estas líneas dentro de la sección "spec.template"
+      selector:
+        matchLabels:
+          app: mongodb
+      ports:
+        - name: "27017"
+          port: 27017
+      type: NodePort
