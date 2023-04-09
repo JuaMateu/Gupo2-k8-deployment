@@ -11,4 +11,5 @@ spec:
     requests:
       storage: 100Mi
   volumeName: mongodb-data-pv
+  storageClassName: "nfs"
 status: {}

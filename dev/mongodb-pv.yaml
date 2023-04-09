@@ -3,6 +3,7 @@ kind: PersistentVolume
 metadata:
   name: mongodb-data-pv
 spec:
+  storageClassName: "nfs"
   accessModes:
     - ReadWriteOnce
   capacity:
