@@ -4,7 +4,7 @@ metadata:
   annotations:
     kompose.cmd: kompose convert -f docker-compose.yaml
     kompose.version: 1.28.0 (c4137012e)
-  creationTimestamp: null
+
   labels:
     io.kompose.service: app
   name: app
@@ -19,13 +19,12 @@ spec:
       annotations:
         kompose.cmd: kompose convert -f docker-compose.yaml
         kompose.version: 1.28.0 (c4137012e)
-      creationTimestamp: null
       labels:
         io.kompose.network/argodb-default: "true"
         io.kompose.service: app
     spec:
       containers:
-        - image: ilcharlyli/docker-hub-1:v2
+        - image: ilcharlyli/devops-app-1:v2
           name: demo
           ports:
             - containerPort: 3000
