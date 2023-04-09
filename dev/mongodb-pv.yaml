@@ -6,6 +6,6 @@ spec:
   accessModes:
     - ReadWriteOnce
   capacity:
-    storage: 100m
+    storage: 1Gi
   hostPath:
     path: /data/mongo
